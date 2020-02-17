@@ -14,6 +14,9 @@ export default {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ]
   },
+  router: {
+    base: '/for-misato-fans/'
+  },
   /*
   ** Customize the progress-bar color
   */
