@@ -1,3 +1,9 @@
+const routerBase = process.env.DEPLOY_ENV === 'GH_PAGES' ? {
+  router: {
+    base: 'https://for-misato-fans.ml/'
+  }
+} : {}
+
 export default {
   mode: 'universal',
   /*
@@ -14,9 +20,7 @@ export default {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ]
   },
-  router: {
-    base: 'https://for-misato-fans.ml/'
-  },
+  ...routerBase,
   /*
   ** Customize the progress-bar color
   */
