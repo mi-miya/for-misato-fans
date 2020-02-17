@@ -15,7 +15,7 @@ export default {
     ]
   },
   router: {
-    base: '/for-misato-fans.ml/'
+    base: 'https://for-misato-fans.ml/'
   },
   /*
   ** Customize the progress-bar color
