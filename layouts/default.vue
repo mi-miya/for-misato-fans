@@ -20,6 +20,16 @@
 import SideNav from '~/components/SideNav.vue'
 
 export default {
+  head () {
+    return {
+      link: [
+        {
+          rel: 'stylesheet',
+          href: 'https://fonts.googleapis.com/css?family=Coda+Caption:800|M+PLUS+Rounded+1c&display=swap'
+        }
+      ]
+    }
+  },
   components: {
     SideNav
   },
@@ -47,7 +57,7 @@ export default {
 
 <style lang="scss">
 @import '~/assets/stylesheets/common.scss';
-@import url('https://fonts.googleapis.com/css?family=Coda+Caption:800|M+PLUS+Rounded+1c&display=swap');
+// @import url('https://fonts.googleapis.com/css?family=Coda+Caption:800|M+PLUS+Rounded+1c&display=swap');
 // M PLUS Rounded 1c body
 // Coda Caption #menu
 
