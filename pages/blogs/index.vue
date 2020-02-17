@@ -31,7 +31,6 @@
 
 <style lang="scss" scoped>
 @import '~/assets/stylesheets/common.scss';
-@import url('https://fonts.googleapis.com/css?family=Anton&display=swap');
 
 #blogs {
   .blog_list {
@@ -139,6 +138,16 @@ export default {
     idToDate (id) {
       const date = id.substr(0, 10).split('-')
       return date.join(' / ')
+    }
+  },
+  head () {
+    return {
+      link: [
+        {
+          rel: 'stylesheet',
+          href: 'https://fonts.googleapis.com/css?family=Anton&display=swap'
+        }
+      ]
     }
   }
 }

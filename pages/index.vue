@@ -4,20 +4,27 @@
       <h2>自分のこと</h2>
       <div class="about_text">
         <p>
-          アニメが好きです。
-          『君の名は』でアニメの奥深さを知り、『Re:ゼロ』で沼にハマりかけています。
+          東京のSES系企業にてテレビ系システムの運用・修正業務を経験。<br>
+          現在は、大阪府でフリーランスエンジニアとして、<br>
+          Flutterアプリの開発やWebサイト制作をお手伝いしています。
+        </p>
+        <p>
+          アニメが好きです。<br>
+          『君の名は』でアニメの奥深さを知り、<br>
+          『Re:ゼロ』で沼にハマりかけています。<br>
           最近見た中で面白かったのは、鬼滅の刃です。
         </p>
         <p>
-          FPSゲームも好きでよくやります。今のマイブームはBFV！
-          初めてのFPSはNEXONのCSOでした。MAPはベガス。
+          FPSゲームも好きでよくやります。<br>
+          今のマイブームはBFV！初めてのFPSはNEXONのCSOでした。<br>
           生まれて初めてFPSをやった時の感動は、今でも忘れられません。
         </p>
         <p>
-          以前勤めていた現場を開発チーム解体の折に退職し、自転車で日本一周の旅に出発しました。
-          総移動日数は158日。北海道では-10度近い環境で野宿を行いました。
-          苦しい坂道を駆け上って、見上げた先に広がる紅葉の鮮やかさ。
-          峠から一気に山を下るとき、木々の隙間から海が見えた時の高揚感。
+          以前勤めていた現場を開発チーム解体の折に退職し、<br>
+          自転車で日本一周の旅に出発しました。<br>
+          総移動日数は158日。北海道では-10度近い環境で野宿を行いました。<br>
+          苦しい坂道を駆け上って見上げた先に広がる紅葉の鮮やかさや、<br>
+          峠から一気に山を下るとき、木々の隙間から海が見えた時の高揚感。<br>
           見るもの全てに魅了された毎日でした。
         </p>
       </div>
@@ -26,6 +33,24 @@
       <h2>
         作ったもの
       </h2>
+      <div class="created_div">
+        <div class="created_description">
+          <h3>Github</h3>
+        </div>
+        <ul class="scrolljs">
+          <li v-for="repo in repos" :key="repo.url">
+            <a :href="repo.url">
+              <img :src="require('~/assets/images/repos/' + repo.img)" :alt="repo.title">
+              <p>{{ repo.title }}</p>
+            </a>
+          </li>
+          <li class="created_readmore">
+            <a href="https://github.com/mi-miya?tab=repositories">
+              <p>もっと見る</p>
+            </a>
+          </li>
+        </ul>
+      </div>
       <div class="created_div traces">
         <div class="created_description">
           <h3>Traces</h3>
@@ -42,24 +67,6 @@
           </li>
           <li class="created_readmore">
             <a href="https://mi-miya.github.io/traces/">
-              <p>もっと見る</p>
-            </a>
-          </li>
-        </ul>
-      </div>
-      <div class="created_div">
-        <div class="created_description">
-          <h3>Github</h3>
-        </div>
-        <ul class="scrolljs">
-          <li v-for="repo in repos" :key="repo.url">
-            <a :href="repo.url">
-              <img :src="require('~/assets/images/repos/' + repo.img)" :alt="repo.title">
-              <p>{{ repo.title }}</p>
-            </a>
-          </li>
-          <li class="created_readmore">
-            <a href="https://github.com/mi-miya?tab=repositories">
               <p>もっと見る</p>
             </a>
           </li>
@@ -106,14 +113,18 @@
 @import '~/assets/stylesheets/common.scss';
 
 #home {
-  padding: 40px 0;
   section {
+    display: flex;
+      flex-direction: column;
+      justify-content: center;
     width: 90%;
-    margin: 0 auto 40px;
+    min-height: 100vh;
+    margin: 0 auto;
     @include media($pc) {
       width: 95%;
     }
     h2 {
+      margin: 0 0 24px;
       font-size: 24px;
       letter-spacing: 5px;
       font-weight: normal;
@@ -122,8 +133,9 @@
   #about {
     .about_text {
       p {
-        margin: 0 0 14px;
+        margin: 0 0 26px;
         font-size: 14px;
+        line-height: 24px;
       }
     }
   }

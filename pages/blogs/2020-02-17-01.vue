@@ -13,7 +13,6 @@
 </template>
 
 <style lang="scss" scoped>
-@import url('https://fonts.googleapis.com/css?family=Courier+Prime|Noto+Serif+JP&display=swap');
 @import '~/assets/stylesheets/blog.scss';
 
 .hidden {
@@ -54,7 +53,7 @@ let Doudesyo_ka = () => {
   return \`
     Hacker Typerは簡単に見えて、こだわられたデザインをしています
     なので、Blog に組み込んでみても
-    イマイチ世界観が構築できないような気はします
+    イマイチ世界観が演出できないような気はします
   \`;
 }
 
@@ -107,6 +106,16 @@ export default {
       window.scrollTo({
         top: document.body.clientHeight
       })
+    }
+  },
+  head () {
+    return {
+      link: [
+        {
+          rel: 'stylesheet',
+          href: 'https://fonts.googleapis.com/css?family=Courier+Prime|Noto+Serif+JP&display=swap'
+        }
+      ]
     }
   }
 }

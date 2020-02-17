@@ -17,9 +17,12 @@
         </a>
       </li>
       <li>
-        <a href="/blogs">
+        <nuxt-link
+          to="/blogs"
+          class="check_scroll"
+        >
           ブログ<br><span>Blogs</span>
-        </a>
+        </nuxt-link>
       </li>
       <li>
         <a href="https://docs.google.com/forms/d/1BTCd_FQW4d5ZC_b4Su7_pAZqLvG5eaB5eDTUCPze2Nk">
@@ -35,16 +38,23 @@
 
 <script>
 export default {
+  mounted () {
+    if (this.$route.path === '/') {
+      const docs = document.getElementsByClassName('check_scroll')
+      for (let i = 0; i < docs.length; i++) {
+        docs[i].removeAttribute('href')
+      }
+    }
+  },
   methods: {
     clickNav (anchor) {
-      const el = document.getElementById(anchor)
-      if (el) {
+      if (this.$route.path === '/') {
         window.scrollBy({
-          top: el.getBoundingClientRect().top,
+          top: document.getElementById(anchor).getBoundingClientRect().top,
           behavior: 'smooth'
         })
       } else {
-        window.location.href = `/#${anchor}`
+        this.$router.push(`/#${anchor}`)
       }
     }
   }

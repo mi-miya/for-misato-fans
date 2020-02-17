@@ -16,50 +16,8 @@
   </div>
 </template>
 
-<script>
-import SideNav from '~/components/SideNav.vue'
-
-export default {
-  head () {
-    return {
-      link: [
-        {
-          rel: 'stylesheet',
-          href: 'https://fonts.googleapis.com/css?family=Coda+Caption:800|M+PLUS+Rounded+1c&display=swap'
-        }
-      ]
-    }
-  },
-  components: {
-    SideNav
-  },
-  data () {
-    return {
-      menuFlg: false
-    }
-  },
-  methods: {
-    clickMenu () {
-      this.menuFlg = !this.menuFlg
-      if (this.menuFlg) {
-        document.getElementById('sidebar_wrapper').classList.add('clickMenu')
-        document.getElementById('menu_text').innerHTML = 'CLOSE'
-        document.getElementById('menu_text').style.transform = 'rotate(360deg)'
-      } else {
-        document.getElementById('sidebar_wrapper').classList.remove('clickMenu')
-        document.getElementById('menu_text').innerHTML = 'MENU'
-        document.getElementById('menu_text').style.transform = 'rotate(0deg)'
-      }
-    }
-  }
-}
-</script>
-
 <style lang="scss">
 @import '~/assets/stylesheets/common.scss';
-// @import url('https://fonts.googleapis.com/css?family=Coda+Caption:800|M+PLUS+Rounded+1c&display=swap');
-// M PLUS Rounded 1c body
-// Coda Caption #menu
 
 * {
   margin: 0;
@@ -130,3 +88,42 @@ a {
   }
 }
 </style>
+
+<script>
+import SideNav from '~/components/SideNav.vue'
+
+export default {
+  components: {
+    SideNav
+  },
+  data () {
+    return {
+      menuFlg: false
+    }
+  },
+  methods: {
+    clickMenu () {
+      this.menuFlg = !this.menuFlg
+      if (this.menuFlg) {
+        document.getElementById('sidebar_wrapper').classList.add('clickMenu')
+        document.getElementById('menu_text').innerHTML = 'CLOSE'
+        document.getElementById('menu_text').style.transform = 'rotate(360deg)'
+      } else {
+        document.getElementById('sidebar_wrapper').classList.remove('clickMenu')
+        document.getElementById('menu_text').innerHTML = 'MENU'
+        document.getElementById('menu_text').style.transform = 'rotate(0deg)'
+      }
+    }
+  },
+  head () {
+    return {
+      link: [
+        {
+          rel: 'stylesheet',
+          href: 'https://fonts.googleapis.com/css?family=Coda+Caption:800|M+PLUS+Rounded+1c&display=swap'
+        }
+      ]
+    }
+  }
+}
+</script>
