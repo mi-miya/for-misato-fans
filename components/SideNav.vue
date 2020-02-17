@@ -25,6 +25,11 @@
         </nuxt-link>
       </li>
       <li>
+        <a href="https://photos.google.com/share/AF1QipPAoIKtwqe_8j6fva4MRHqh46gYhFXpJA6y3yT6AVi_XUAScU4j96fFJGEB9_-c8g?hl=ja&key=T2x0NmJVV1RRQmlmZXd5YWtfTmd1TUlzdnJ2THp3">
+          写真<br><span>Photos</span>
+        </a>
+      </li>
+      <li>
         <a href="https://docs.google.com/forms/d/1BTCd_FQW4d5ZC_b4Su7_pAZqLvG5eaB5eDTUCPze2Nk">
           ご連絡<br><span>Contact</span>
         </a>
