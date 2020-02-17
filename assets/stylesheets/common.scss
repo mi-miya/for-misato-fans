@@ -1,0 +1,11 @@
+$pc: 680px;
+$menu: 20vw;
+$spSidebarWidth: 80%;
+$pcSidebarWidth: 200px;
+$blog_theme: #ff8297;
+
+@mixin media($break-point) {
+  @media screen and (min-width: $break-point) {
+    @content;
+  }
+}
