@@ -61,6 +61,11 @@ export default {
       } else {
         this.$router.push(`/#${anchor}`)
       }
+      document.getElementById('sidebar_wrapper').classList.remove('clickMenu')
+      document.getElementById('menu_text').innerHTML = 'MENU'
+      document.getElementById('menu_text').style.transform = 'rotate(0deg)'
+      document.getElementById('bg').style.opacity = 0
+      document.getElementById('bg').style.pointerEvents = 'none'
     }
   }
 }
