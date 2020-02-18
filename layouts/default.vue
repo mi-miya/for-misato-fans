@@ -8,7 +8,9 @@
     </div>
     <div class="container">
       <div id="sidebar_wrapper">
-        <SideNav />
+        <SideNav
+          @changeFlg="boolChange"
+        />
       </div>
       <div class="main_wrapper">
         <nuxt />
@@ -141,6 +143,9 @@ export default {
       document.getElementById('menu_text').style.transform = 'rotate(0deg)'
       document.getElementById('bg').style.opacity = 0
       document.getElementById('bg').style.pointerEvents = 'none'
+    },
+    boolChange (bool) {
+      this.menuFlg = bool
     }
   },
   head () {

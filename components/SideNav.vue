@@ -66,6 +66,7 @@ export default {
       document.getElementById('menu_text').style.transform = 'rotate(0deg)'
       document.getElementById('bg').style.opacity = 0
       document.getElementById('bg').style.pointerEvents = 'none'
+      this.$emit('changeFlg', false)
     }
   }
 }

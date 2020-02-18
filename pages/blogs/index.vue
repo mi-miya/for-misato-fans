@@ -1,5 +1,6 @@
 <template>
   <div id="blogs">
+    <!-- TODO: 親から値を渡す形でブログの内容のみ書き換える実装としたい -->
     <ul class="blog_list">
       <li v-for="blog in blogs" :key="blog.id">
         <p class="date">

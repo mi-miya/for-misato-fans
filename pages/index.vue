@@ -12,7 +12,7 @@
           アニメが好きです。<br>
           『君の名は』でアニメの奥深さを知り、<br>
           『Re:ゼロ』で沼にハマりかけています。<br>
-          最近見た中で面白かったのは、鬼滅の刃です。
+          最近見た中で面白かったのは、『映像研には手を出すな！』です。
         </p>
         <p>
           FPSゲームも好きでよくやります。<br>
@@ -254,7 +254,7 @@ export default {
       repos: [
         {
           title: 'Traces',
-          url: 'traces',
+          url: 'https://mi-miya.github.io/traces/index.html',
           img: 'traces.png'
         },
         {
