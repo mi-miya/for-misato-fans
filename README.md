@@ -1,22 +1,7 @@
-# for-misato-fans
+# Misato Miyahara
 
-> Blog for Misato fans.
+ポートフォリオ兼ブログとして運用しています。
 
-## Build Setup
+Nuxt.jsを使用し、静的サイトジェネレータは使わずに手動で記事の追加など諸々の作業を行っています。
 
-``` bash
-# install dependencies
-$ npm install
-
-# serve with hot reload at localhost:3000
-$ npm run dev
-
-# build for production and launch server
-$ npm run build
-$ npm run start
-
-# generate static project
-$ npm run generate
-```
-
-For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
+記事ごとに独自のCSS/JSを反映させたいということが第一にあったので、MDから記事を自動生成するSSGでは不都合がありました...
