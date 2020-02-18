@@ -1,5 +1,6 @@
 <template>
   <div class="wrapper">
+    <div id="bg" @click="clickBg()" />
     <div id="menu" @click="clickMenu()">
       <p id="menu_text">
         MENU
@@ -41,7 +42,7 @@ a {
   position: fixed;
     bottom: 0;
     right: 0;
-  z-index: 999;
+  z-index: 1000;
   width: $menu;
   height: $menu;
   background-color: #6969699f;
@@ -58,8 +59,20 @@ a {
     font-size: 18px;
     color: #fff;
     user-select: none;
-    transition: transform 200ms;
+    transition: transform $sidebar_duration;
   }
+}
+#bg {
+  position: fixed;
+    top: 0;
+    left: 0;
+  z-index: 999;
+  width: 100vw;
+  height: 100vh;
+  background-color: #000;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity $sidebar_duration;
 }
 .container {
   position: relative;
@@ -69,8 +82,9 @@ a {
     position: fixed;
       top: -2px;
       left: -$spSidebarWidth;
+    z-index: 1000;
     width: $spSidebarWidth;
-    transition: left 200ms;
+    transition: left $sidebar_duration;
     @include media($pc) {
       width: $pcSidebarWidth;
       left: auto;
@@ -105,14 +119,28 @@ export default {
     clickMenu () {
       this.menuFlg = !this.menuFlg
       if (this.menuFlg) {
-        document.getElementById('sidebar_wrapper').classList.add('clickMenu')
-        document.getElementById('menu_text').innerHTML = 'CLOSE'
-        document.getElementById('menu_text').style.transform = 'rotate(360deg)'
+        this.openSidebar()
       } else {
-        document.getElementById('sidebar_wrapper').classList.remove('clickMenu')
-        document.getElementById('menu_text').innerHTML = 'MENU'
-        document.getElementById('menu_text').style.transform = 'rotate(0deg)'
+        this.closeSidebar()
       }
+    },
+    clickBg () {
+      this.menuFlg = false
+      this.closeSidebar()
+    },
+    openSidebar () {
+      document.getElementById('sidebar_wrapper').classList.add('clickMenu')
+      document.getElementById('menu_text').innerHTML = 'CLOSE'
+      document.getElementById('menu_text').style.transform = 'rotate(360deg)'
+      document.getElementById('bg').style.opacity = 0.5
+      document.getElementById('bg').style.pointerEvents = 'auto'
+    },
+    closeSidebar () {
+      document.getElementById('sidebar_wrapper').classList.remove('clickMenu')
+      document.getElementById('menu_text').innerHTML = 'MENU'
+      document.getElementById('menu_text').style.transform = 'rotate(0deg)'
+      document.getElementById('bg').style.opacity = 0
+      document.getElementById('bg').style.pointerEvents = 'none'
     }
   },
   head () {
