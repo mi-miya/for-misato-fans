@@ -1,19 +1,21 @@
 <template>
   <div id="blogs">
-    <!-- TODO: 親から値を渡す形でブログの内容のみ書き換える実装としたい -->
     <ul class="blog_list">
       <li v-for="blog in blogs" :key="blog.id">
         <p class="date">
           {{ idToDate(blog.id) }}
         </p>
-        <a :href="'/blogs/' + blog.id">
+        <n-link
+          :to="'/blogs/' + blog.id"
+          no-prefetch
+        >
           <div class="blog_header">
             <h2>{{ blog.title }}</h2>
             <p>
               {{ blog.description }}
             </p>
           </div>
-        </a>
+        </n-link>
         <ul class="tags">
           <li v-for="(tag, index) in blog.tag" :key="index">
             <a href="#">

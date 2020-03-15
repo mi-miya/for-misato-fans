@@ -1,4 +1,4 @@
-<!-- file name => 2022120201.vue => year/month/day/number -->
+<!-- 2022-12-02-01.vue => year/month/day/number -->
 <template>
   <div class="blog">
     <header>

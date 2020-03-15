@@ -4,7 +4,7 @@
       <p class="date">
         2020 / 02 / 17
       </p>
-      <h1>/タイピング | タップ/ で読むブログ</h1>
+      <h1>タイピング or タップ で読むブログ</h1>
     </header>
     <main>
       <pre id="typing_area"><span id="code">// Typing か ココを Tap で、Blog が読めます.</span><span id="cursor">|</span></pre>
@@ -83,15 +83,13 @@ export default {
       textNumber: 0
     }
   },
-  beforeMount () {
+  mounted () {
     const el = document.getElementById('typing_area')
     window.addEventListener('keydown', this.keyEvent, false)
     window.addEventListener('keyup', this.keyEvent, false)
     window.addEventListener('keypress', this.keyEvent, false)
     el.addEventListener('touchstart', this.keyEvent, false)
     el.addEventListener('touchend', this.keyEvent, false)
-  },
-  mounted: () => {
     setInterval(() => {
       document.getElementById('cursor').classList.toggle('hidden')
     }, 700)
