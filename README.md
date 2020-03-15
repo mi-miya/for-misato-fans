@@ -15,6 +15,6 @@ npm run dev
 # 静的ページ生成
 npm run generate
 
-# デプロイ(gitプッシュ後)
+# デプロイ(コミット後)
 npm run deploy
 ```
