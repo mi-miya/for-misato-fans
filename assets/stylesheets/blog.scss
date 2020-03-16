@@ -1,9 +1,9 @@
 @import '~/assets/stylesheets/common.scss';
 @import url('https://fonts.googleapis.com/css?family=Anton&display=swap');
 
-.blog {
+.ly_blog {
   width: 100%;
-  header {
+  .ly_header {
     display: flex;
       justify-content: center;
       align-items: center;
@@ -11,18 +11,18 @@
     height: 100vh;
     padding: 0 20px;
     border-bottom: 1px dotted $blog_theme;
-    .date {
+    .el_blogDate {
       margin: 0 0 14px;
       font-family: 'Anton', sans-serif;
       font-size: 22px;
       color: $blog_theme;
     }
-    h1 {
+    .el_blogHeader {
       font-size: 28px;
       text-align: center;
     }
   }
-  main {
+  .ly_main {
     width: 90%;
     margin: 0 auto;
     padding: 40px 0;

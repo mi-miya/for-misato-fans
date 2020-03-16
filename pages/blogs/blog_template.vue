@@ -1,13 +1,15 @@
 <!-- 2022-12-02-01.vue => year/month/day/number -->
 <template>
-  <div class="blog">
-    <header>
-      <p class="date">
+  <div class="ly_blog">
+    <header class="ly_header">
+      <p class="el_blogDate">
         year / month / day
       </p>
-      <h1>title</h1>
+      <h1 class="el_blogHeader">
+        title
+      </h1>
     </header>
-    <main>
+    <main class="ly_main">
       <p>
         <span class="code">text</span>
       </p>

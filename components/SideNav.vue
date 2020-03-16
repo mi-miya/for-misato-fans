@@ -93,7 +93,6 @@ export default {
       width: 98%;
       margin: 2px auto;
       text-align: center;
-      background-color: #fff;
       a {
         display: inline-block;
         width: 100%;

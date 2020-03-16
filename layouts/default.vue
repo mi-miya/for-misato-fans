@@ -36,6 +36,14 @@ a {
   text-decoration: none;
   color: #000;
 }
+::selection {
+  background: #a8a8a8;
+  color: #fff;
+}
+::-moz-selection {
+  background: #a8a8a8;
+  color: #fff;
+}
 .wrapper {
   margin: 0 auto;
   position: relative;
