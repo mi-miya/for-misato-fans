@@ -23,3 +23,23 @@
 <style lang="scss" scoped>
 @import '~/assets/stylesheets/blog.scss';
 </style>
+
+<script>
+export default {
+  data: () => {
+    return {
+    }
+  },
+  head () {
+    return {
+      title: 'title',
+      link: [
+        {
+          rel: 'stylesheet',
+          href: 'https://fonts.googleapis.com/***'
+        }
+      ]
+    }
+  }
+}
+</script>
