@@ -173,7 +173,7 @@ export default {
   },
   head () {
     return {
-      title: '温泉で記事を書いてみました。'//,
+      title: 'お風呂で記事を書いてみました。'//,
       // link: [
       //   {
       //     rel: 'stylesheet',
