@@ -6,10 +6,10 @@
         <p>
           東京のSES系企業にてテレビ系システムの運用・修正業務を経験。<br>
           現在は、大阪府でフリーランスエンジニアとして、<br>
+          Flutterアプリの開発やWebサイト制作をお手伝いしています。<br>
           <a href="https://docs.google.com/forms/d/1BTCd_FQW4d5ZC_b4Su7_pAZqLvG5eaB5eDTUCPze2Nk">
-            Flutterアプリの開発やWebサイト制作をお手伝いしています。<br>
+            お仕事のご依頼、ご相談はお気軽にどうぞ!
           </a>
-          お仕事のご依頼、ご相談はお気軽にどうぞ!
         </p>
         <p>
           アニメが好きです＼(^o^)／<br>
@@ -31,9 +31,6 @@
           <a href="https://docs.google.com/forms/d/1BTCd_FQW4d5ZC_b4Su7_pAZqLvG5eaB5eDTUCPze2Nk">
             アウトドア好きの方は、一緒にキャンプファイヤーを囲みませんか!?
           </a>
-        </p>
-        <p>
-          お気軽にご連絡をお待ちしております!
         </p>
       </div>
     </section>
@@ -128,8 +125,12 @@
     width: 90%;
     min-height: 100vh;
     margin: 0 auto;
+    border-bottom: 1px dotted $themeColor;
     @include media($pc) {
       width: 95%;
+    }
+    &:last-child {
+      border: none;
     }
     h2 {
       margin: 0 0 24px;

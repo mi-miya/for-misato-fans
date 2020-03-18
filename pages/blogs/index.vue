@@ -41,7 +41,7 @@
     margin: 0 auto;
     li {
       padding: 50px 0;
-      border-bottom: 1px solid #b4b4b4;
+      border-bottom: 1px dotted $themeColor;
       .date {
         margin: 0 0 20px;
         font-family: 'Anton', sans-serif;
