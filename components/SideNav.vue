@@ -17,16 +17,8 @@
         </a>
       </li>
       <li>
-        <nuxt-link
-          to="/blogs"
-          class="check_scroll"
-        >
+        <a href="blogs">
           ブログ<br><span>Blogs</span>
-        </nuxt-link>
-      </li>
-      <li>
-        <a href="https://photos.google.com/share/AF1QipPAoIKtwqe_8j6fva4MRHqh46gYhFXpJA6y3yT6AVi_XUAScU4j96fFJGEB9_-c8g?hl=ja&key=T2x0NmJVV1RRQmlmZXd5YWtfTmd1TUlzdnJ2THp3">
-          写真<br><span>Photos</span>
         </a>
       </li>
       <li>
@@ -43,14 +35,6 @@
 
 <script>
 export default {
-  mounted () {
-    if (this.$route.path === '/') {
-      const docs = document.getElementsByClassName('check_scroll')
-      for (let i = 0; i < docs.length; i++) {
-        docs[i].removeAttribute('href')
-      }
-    }
-  },
   methods: {
     clickNav (anchor) {
       if (this.$route.path === '/') {

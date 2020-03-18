@@ -47,7 +47,7 @@
         font-family: 'Anton', sans-serif;
         text-align: center;
         font-size: 20px;
-        color: $blog_theme;
+        color: $themeColor;
         @include media($pc) {
           font-size: 26px;
         }
@@ -89,8 +89,8 @@
             font-size: 14px;
             border-radius: 4px;
             box-sizing: border-box;
-            border: 1px solid $blog_theme;
-            color: $blog_theme;
+            border: 1px solid $themeColor;
+            color: $themeColor;
             transition: border-color 200ms, color 200ms;
             &:hover {
               border-color: #b65e6d;
@@ -110,7 +110,7 @@
     a {
       margin: 0 10px;
       font-size: 24px;
-      color: $blog_theme;
+      color: $themeColor;
     }
   }
 }

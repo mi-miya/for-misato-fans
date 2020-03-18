@@ -6,26 +6,34 @@
         <p>
           東京のSES系企業にてテレビ系システムの運用・修正業務を経験。<br>
           現在は、大阪府でフリーランスエンジニアとして、<br>
-          Flutterアプリの開発やWebサイト制作をお手伝いしています。
+          <a href="https://docs.google.com/forms/d/1BTCd_FQW4d5ZC_b4Su7_pAZqLvG5eaB5eDTUCPze2Nk">
+            Flutterアプリの開発やWebサイト制作をお手伝いしています。<br>
+          </a>
+          お仕事のご依頼、ご相談はお気軽にどうぞ!
         </p>
         <p>
-          アニメが好きです。<br>
-          『君の名は』でアニメの奥深さを知り、<br>
-          『Re:ゼロ』で沼にハマりかけています。<br>
-          最近見た中で面白かったのは、『映像研には手を出すな！』です。
+          アニメが好きです＼(^o^)／<br>
+          一番好きなアニメは『Re:ゼロ』ですが、他にもいろいろ見てます。<br>
+          <a href="https://docs.google.com/forms/d/1BTCd_FQW4d5ZC_b4Su7_pAZqLvG5eaB5eDTUCPze2Nk">
+            アニメが好きな方は、私と一緒にアニメ鑑賞しませんか!?
+          </a>
         </p>
         <p>
-          FPSゲームも好きでよくやります。<br>
-          今のマイブームはBFV！初めてのFPSはNEXONのCSOでした。<br>
-          生まれて初めてFPSをやった時の感動は、今でも忘れられません。
+          FPSゲームも好きです＼(^o^)／<br>
+          今はPCでBattle Field Vをしています。他にはCSGOやCoD:MWも。<br>
+          <a href="https://docs.google.com/forms/d/1BTCd_FQW4d5ZC_b4Su7_pAZqLvG5eaB5eDTUCPze2Nk">
+            FPSが好きな方は、一緒に戦場にダイブしませんか!?
+          </a>
         </p>
         <p>
-          以前勤めていた現場を開発チーム解体の折に退職し、<br>
-          自転車で日本一周の旅に出発しました。<br>
-          総移動日数は158日。北海道では-10度近い環境で野宿を行いました。<br>
-          苦しい坂道を駆け上って見上げた先に広がる紅葉の鮮やかさや、<br>
-          峠から一気に山を下るとき、木々の隙間から海が見えた時の高揚感。<br>
-          見るもの全てに魅了された毎日でした。
+          旅やアウトドアも好きです＼(^o^)／<br>
+          以前、自転車で日本一周の旅を達成したこともあります。<br>
+          <a href="https://docs.google.com/forms/d/1BTCd_FQW4d5ZC_b4Su7_pAZqLvG5eaB5eDTUCPze2Nk">
+            アウトドア好きの方は、一緒にキャンプファイヤーを囲みませんか!?
+          </a>
+        </p>
+        <p>
+          お気軽にご連絡をお待ちしております!
         </p>
       </div>
     </section>
@@ -79,7 +87,7 @@
       </h2>
       <div class="wrote_div">
         <div class="wrote_description">
-          <h3>技術系ブログ</h3>
+          <h3>変なブログ</h3>
           <p>
             それまではJekyllとGithubPagesで書いていましたが、株式会社ブルーパドルさんの『変なWEBメディア』に触発されて作り直しました。<br>
             読んでいる記事に、読者がドキドキするような仕掛けが出来たらいいなと、企んでいます。
@@ -136,6 +144,9 @@
         margin: 0 0 26px;
         font-size: 14px;
         line-height: 24px;
+      }
+      a {
+        color: $themeColor;
       }
     }
   }
@@ -204,6 +215,9 @@
               height: 120px;
               line-height: 120px;
             }
+            p {
+              color: $themeColor;
+            }
           }
         }
       }
@@ -221,7 +235,7 @@
           font-size: 14px;
         }
         a {
-          color: #424242;
+          color: $themeColor;
         }
       }
     }
