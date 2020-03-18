@@ -36,7 +36,7 @@
     </section>
     <section id="created">
       <h2>
-        作ったもの
+        作ったもの / 手伝ったもの
       </h2>
       <div class="created_div">
         <div class="created_description">
@@ -58,23 +58,24 @@
       </div>
       <div class="created_div traces">
         <div class="created_description">
-          <h3>Traces</h3>
+          <h3>Projects</h3>
           <p>
-            デザインを学ぶために、色々なWebサイトのトレースを行っています。
+            以前関わったもの、現在進行系で携わっているものなど。<br>
+            この他に、web初学者向けカリキュラム作成や非公開プロジェクト等の経験がございます。
           </p>
         </div>
         <ul class="scrolljs">
-          <li v-for="trace in traces" :key="trace.url">
-            <a :href="'https://mi-miya.github.io/traces/' + trace.url + '/'">
-              <img :src="require('~/assets/images/traces/' + trace.url + '.png')" :alt="trace.title">
-              <p>{{ trace.title }}</p>
+          <li v-for="project in projects" :key="project.url">
+            <a :href="project.url">
+              <img :src="require('~/assets/images/projects/' + project.img)" :alt="project.title">
+              <p>{{ project.title }}</p>
             </a>
           </li>
-          <li class="created_readmore">
+          <!-- <li class="created_readmore">
             <a href="https://mi-miya.github.io/traces/">
               <p>もっと見る</p>
             </a>
-          </li>
+          </li> -->
         </ul>
       </div>
     </section>
@@ -248,24 +249,6 @@
 export default {
   data () {
     return {
-      traces: [
-        {
-          title: 'NIGHT-WAVE',
-          url: 'night-wave'
-        },
-        {
-          title: 'TOYOTAリクルートサイト',
-          url: 'toyota-monozukuri'
-        },
-        {
-          title: 'UI温泉',
-          url: 'ui-onsen'
-        },
-        {
-          title: 'Hacker Typer',
-          url: 'hacker-typer'
-        }
-      ],
       repos: [
         {
           title: 'Traces',
@@ -291,6 +274,13 @@ export default {
           title: '最小経路探索',
           url: 'https://gist.github.com/mi-miya/28f6f96af6808e5dc84575b16f3d00f6',
           img: 'keiro.png'
+        }
+      ],
+      projects: [
+        {
+          title: 'Tweecha2',
+          url: 'https://sinproject.net/tweecha2/',
+          img: 'tweecha2.png'
         }
       ]
     }
