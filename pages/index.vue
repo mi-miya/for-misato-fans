@@ -58,7 +58,7 @@
       </div>
       <div class="created_div traces">
         <div class="created_description">
-          <h3>Projects</h3>
+          <h3 class="created_description_pro_head">Projects</h3>
           <p>
             以前関わったもの、現在進行系で携わっているものなど。<br>
             この他に、web初学者向けカリキュラム作成や非公開プロジェクト等の経験がございます。
@@ -71,11 +71,6 @@
               <p>{{ project.title }}</p>
             </a>
           </li>
-          <!-- <li class="created_readmore">
-            <a href="https://mi-miya.github.io/traces/">
-              <p>もっと見る</p>
-            </a>
-          </li> -->
         </ul>
       </div>
     </section>
@@ -165,9 +160,13 @@
         h3 {
           font-size: 20px;
           font-weight: normal;
+          &.created_description_pro_head {
+            margin-bottom: 12px;
+          }
         }
         p {
           font-size: 14px;
+          line-height: 20px;
         }
       }
       ul {
@@ -233,11 +232,14 @@
       .wrote_description {
         margin: 0 0 40px;
         h3 {
+          margin-bottom: 10px;
           font-size: 18px;
           font-weight: normal;
         }
         p {
+          line-height: 22px;
           font-size: 14px;
+          margin-bottom: 4px;
         }
         a {
           color: $themeColor;

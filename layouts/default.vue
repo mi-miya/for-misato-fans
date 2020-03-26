@@ -20,12 +20,9 @@
 </template>
 
 <style lang="scss">
+@import '~/assets/stylesheets/reset.css';
 @import '~/assets/stylesheets/common.scss';
 
-* {
-  margin: 0;
-  padding: 0;
-}
 body {
   font-family: 'M PLUS Rounded 1c', sans-serif;
 }

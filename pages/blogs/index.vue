@@ -43,7 +43,7 @@
       padding: 50px 0;
       border-bottom: 1px dotted $themeColor;
       .date {
-        margin: 0 0 20px;
+        margin: 0 0 26px;
         font-family: 'Anton', sans-serif;
         text-align: center;
         font-size: 20px;
@@ -58,12 +58,17 @@
           height: 100%;
         .blog_header {
           h2 {
-            margin: 0 0 20px;
+            margin: 0 0 24px;
             text-align: center;
+            line-height: 34px;
             font-size: 30px;
+            @include media($pc) {
+              margin: 0 0 30px;
+            }
           }
           p {
             margin: 0 0 20px;
+            line-height: 24px;
             font-size: 18px;
             color: #333333;
             @include media($pc) {
