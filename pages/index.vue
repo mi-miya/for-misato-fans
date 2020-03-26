@@ -192,6 +192,7 @@
             img {
               width: 30vw;
               height: 30vw;
+              margin-bottom: 6px;
               border-radius: 23vw;
               object-fit: cover;
               @include media($pc) {
