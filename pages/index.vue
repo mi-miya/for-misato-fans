@@ -36,7 +36,7 @@
     </section>
     <section id="created">
       <h2>
-        作ったもの / 手伝ったもの
+        作ったもの / 携わったもの
       </h2>
       <div class="created_div">
         <div class="created_description">
@@ -96,6 +96,9 @@
         </div>
         <div class="wrote_description">
           <h3>Qiita</h3>
+          <p>
+            RailsやNode.js、Pythonなど主に趣味で触ったものについての記事を作成しています。
+          </p>
           <a href="https://qiita.com/mi-miya">
             https://qiita.com/mi-miya
           </a>
@@ -104,7 +107,7 @@
           <h3>旅ブログ</h3>
           <p>
             思い立って出発した自転車日本一周中に書いていたブログです。<br>
-            今となっては、なんだかこそばゆくて恥ずかしいのです。
+            ちょっと恥ずかしすぎて、現在は非公開にしております...
           </p>
           <a href="https://jibun-journey.hateblo.jp/">
             https://jibun-journey.hateblo.jp/

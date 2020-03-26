@@ -45,6 +45,7 @@ a {
   color: #fff;
 }
 .wrapper {
+  min-height: 100vh;
   margin: 0 auto;
   position: relative;
 }
@@ -86,6 +87,7 @@ a {
 }
 .container {
   position: relative;
+  min-height: 100vh;
   margin: 0 auto;
   max-width: 1000px;
   #sidebar_wrapper {
